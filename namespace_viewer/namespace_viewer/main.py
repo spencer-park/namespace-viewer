@@ -3,12 +3,13 @@ def create_namespace_viewer(data:dict):
         print(k, v, type(v))
 
 
-def start_table():
-    ...
+def create_table(func):
+    def decorator(data):
+        head = "<table>"
 
+        if isinstance(data, int):
+            
 
-def end_table():
-    ...
 
 
 def convert_int(data):
